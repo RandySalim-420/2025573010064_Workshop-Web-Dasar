@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 1 - Tabel Nilai Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .table {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #000;
+        }
+        .row {
+            display: flex;
+        }
+        .cell {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        .colspan {
+            flex: 2; /* gabung kolom No + Nama */
+        }
+    </style>
+</head>
+<body>
+
+<div class="table">
+
+    <!-- THEAD -->
+    <div class="row header">
+        <div class="cell">No</div>
+        <div class="cell">Nama Mahasiswa</div>
+        <div class="cell">UTS</div>
+        <div class="cell">UAS</div>
+        <div class="cell">Nilai Akhir</div>
+        <div class="cell">Grade</div>
+    </div>
+
+    <!-- TBODY -->
+    <div class="row">
+        <div class="cell">1</div>
+        <div class="cell">Andi</div>
+        <div class="cell">80</div>
+        <div class="cell">85</div>
+        <div class="cell">82.5</div>
+        <div class="cell">A</div>
+    </div>
+
+    <div class="row">
+        <div class="cell">2</div>
+        <div class="cell">Budi</div>
+        <div class="cell">75</div>
+        <div class="cell">70</div>
+        <div class="cell">72.5</div>
+        <div class="cell">B</div>
+    </div>
+
+    <div class="row">
+        <div class="cell">3</div>
+        <div class="cell">Citra</div>
+        <div class="cell">90</div>
+        <div class="cell">88</div>
+        <div class="cell">89</div>
+        <div class="cell">A</div>
+    </div>
+
+    <div class="row">
+        <div class="cell">4</div>
+        <div class="cell">Dedi</div>
+        <div class="cell">65</div>
+        <div class="cell">70</div>
+        <div class="cell">67.5</div>
+        <div class="cell">C</div>
+    </div>
+
+    <div class="row">
+        <div class="cell">5</div>
+        <div class="cell">Eka</div>
+        <div class="cell">85</div>
+        <div class="cell">80</div>
+        <div class="cell">82.5</div>
+        <div class="cell">A</div>
+    </div>
+
+    <!-- TFOOT -->
+    <div class="row footer">
+        <div class="cell colspan">Rata-rata</div>
+        <div class="cell">79</div>
+        <div class="cell">78.6</div>
+        <div class="cell">78.8</div>
+        <div class="cell">-</div>
+    </div>
+
+</div>
+
+</body>
+</html>

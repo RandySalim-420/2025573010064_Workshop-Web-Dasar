@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --main-font: 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.btn-subscribe {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 50px 10% 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.meta {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.cover-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.main-container {
+    display: flex;
+    padding: 40px 10%;
+    gap: 40px; 
+}
+
+.content {
+    flex: 7; 
+}
+
+.sidebar {
+    flex: 3; 
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.widget { margin-bottom: 30px; }
+.ad-box {
+    background: #ccc;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.footer-column {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .navbar, .main-container, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu { margin: 20px 0; }
+    .main-container { padding: 20px 5%; }
+}

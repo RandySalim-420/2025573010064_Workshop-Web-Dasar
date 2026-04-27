@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelCraft - Tailwind</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+  <!-- NAVBAR (Flexbox + Sticky) -->
+  <nav class="sticky top-0 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur shadow">
+    <div class="container-x flex items-center justify-between py-4">
+      <div class="font-bold text-xl">🚀 PixelCraft</div>
+
+      <ul class="hidden md:flex gap-6">
+        <li><a href="#" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Fitur</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Testimoni</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Kontak</a></li>
+      </ul>
+
+      <!-- tombol dark mode -->
+      <button id="toggleDark" class="btn text-sm">🌙</button>
+    </div>
+  </nav>
+
+  <!-- HERO (Grid) -->
+  <section class="container-x grid gap-8 py-10 md:grid-cols-2 items-center">
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">
+        Desain Profesional untuk Bisnismu
+      </h1>
+      <p class="mb-6">
+        Kami membantu brand tampil lebih menarik dan modern.
+      </p>
+      <button class="btn">Mulai Sekarang</button>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Team Work"
+      class="rounded-2xl w-full object-cover" />
+  </section>
+
+  <!-- FITUR (Card Grid) -->
+  <section class="bg-gray-50 dark:bg-gray-800 py-10">
+    <div class="container-x">
+      <h2 class="section-title">Layanan Kami</h2>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="card">
+          <h3 class="font-bold mb-2">UI/UX Design</h3>
+          <p>Desain aplikasi modern dan user friendly.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-bold mb-2">Branding</h3>
+          <p>Membangun identitas brand yang kuat.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-bold mb-2">Web Design</h3>
+          <p>Website responsif dan menarik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="py-10">
+    <div class="container-x">
+      <h2 class="section-title">Apa Kata Mereka</h2>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="card">"Pelayanan sangat memuaskan! 😊"</div>
+        <div class="card">"Desainnya Bagus 👍"</div>
+        <div class="card">"Recommended!"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Grid 3 kolom di md) -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container-x grid gap-6 md:grid-cols-3">
+      <div>
+        <h3 class="font-bold mb-2">PixelCraft</h3>
+        <p>Jasa desain profesional</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold mb-2">Menu</h3>
+        <p>Home</p>
+        <p>Fitur</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold mb-2">Kontak</h3>
+        <p>Email: randyfake@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

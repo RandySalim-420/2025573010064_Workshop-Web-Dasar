@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+
+.faq details {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.faq details:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.img {
+    position: relative;
+    overflow: hidden;
+}
+
+.img::before {
+    content: attr(data-title);
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img:hover::before {
+    opacity: 1;
+}
+
+.img img {
+    width: 100%;
+    display: block;
+}
+
+
+.progress {
+    position: relative;
+    background: #ddd;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--progress);
+    background: #4caf50;
+
+    z-index: 0;
+}
+
+.progress span {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    color: black;
+}
